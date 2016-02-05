@@ -1,0 +1,91 @@
+@import "config";
+
+.forwardSlideAnimation.ng-enter {
+    position: absolute;
+    left:100%;
+    -webkit-transition: $viewTransitionSpeed ease-out all;
+    -webkit-transform: translate3d(0,0,0);
+   
+}
+
+.forwardSlideAnimation.ng-enter.ng-enter-active{
+    position: absolute;
+    -webkit-transform: translate3d(-100%,0,0);
+}
+
+
+.forwardSlideAnimation.ng-leave {
+    position: absolute;
+    -webkit-transition: $viewTransitionSpeed ease-out all;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.forwardSlideAnimation.ng-leave.ng-leave-active {
+    position: absolute;
+    -webkit-transform: translate3d(-100%,0,0);
+    opacity: 0;
+}
+
+
+
+.backSlideAnimation.ng-enter {
+    position: absolute;
+    left:-100%;
+    -webkit-transition: $viewTransitionSpeed ease-out all;
+    -webkit-transform: translate3d(0,0,0);
+}
+.backSlideAnimation.ng-enter.ng-enter-active {
+    position: absolute;
+    -webkit-transform: translate3d(100%,0,0);
+}
+
+.backSlideAnimation.ng-leave {
+    position: absolute;
+    -webkit-transition: $viewTransitionSpeed ease-out all;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.backSlideAnimation.ng-leave.ng-leave-active {
+    position: absolute;
+    -webkit-transform: translate3d(100%,0,0);
+    opacity: 0;
+}
+
+
+
+
+/* End slide animation */
+
+/* Start fade animation */
+.reveal-animation.ng-enter {
+ -webkit-transition: 0.5s linear all; /* Safari/Chrome */ /* Firefox */ /* Opera */
+ transition: 0.5s linear all; /* IE10+ and Future Browsers */
+    opacity: 0;
+}
+ 
+.reveal-animation.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+/* End fade animation */
+
+.slideUp {
+    -webkit-transform: translateY(-527px);
+    -webkit-transition: .2s ease-in-out;
+}
+
+.slideDown {
+    -webkit-transform: translateY(0px);
+    -webkit-transition: .2s ease-in-out;
+}
+
+.slideUpFull {
+    -webkit-transform: translateY(-$deviceHeight);
+    -webkit-transition: .3s ease-in-out;
+}
+
+.slideDownFull {
+    -webkit-transform: translateY(0);
+    -webkit-transition: .3s ease-in-out;
+}
+
+

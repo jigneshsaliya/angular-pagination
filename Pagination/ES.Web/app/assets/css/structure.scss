@@ -1,0 +1,1025 @@
+/********************************
+			STRUCTURE
+********************************/
+
+.jbIFSA header {
+    min-height:40px;
+    margin-top:10px;
+}
+
+.jbIFSA ul { 
+    list-style:none;
+}
+
+/*a#flight_submit*/
+.jbIFSA input#flight_submit {
+     width: 100%;
+}
+
+input#flight_from,
+input#flight_to,
+input#flight_number {
+	width:100%;
+    height:40px;
+    padding:1% 4%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    margin-bottom:15px;
+}
+
+.jbIFSA .passDetails_titleBar_wide {
+    float: left;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.jbIFSA .customerDetails {
+  height: $seatMapHeight;
+}
+
+.jbIFSA .customerDetailsHeader {
+	float:left;
+    margin-left: 30px;
+}
+
+.jbIFSA .passDetails_greetedContainer{
+    float:right;
+    min-width: 100px;
+    margin-right: 30px;
+    margin-top: -5px;
+}
+
+.jbIFSA .passDetails_greetedText_pos {
+    /*float: right;*/
+    margin-top: 3px;
+    /*position: absolute;*/
+}
+
+.jbIFSA .passDetails_greetedContainer .checkbox_pos {
+    float: left;
+    width: 40px;
+    height: 20px;
+    padding: 7px;
+    //margin-right: -15px;
+}
+
+.jbIFSA .passDetailsConnectFlight.fltLt  {
+    width:45%;
+    float:left;
+    min-height:150px;
+    margin-right:1%;
+    padding: 1% 1% 1% 4%;
+}
+
+.jbIFSA .passDetailsConnectFlight.fltRt {
+    width:45%;
+    float:right;
+    min-height:150px;
+    padding:1%;
+}
+
+.jbIFSA .passDetailsConnectFlight h4 {
+	margin-bottom: 9px;
+}
+
+@media all and (max-width: 800px) and (min-width: 480px) {
+    header h2 {
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:0px;
+    }
+}
+
+
+@media all and (max-width: 480px) and (min-width: 320px) {
+    section#left_sidebar {
+        float:none;
+        width:auto;
+
+    }
+
+    input#submit {
+        left:9px;
+
+    }
+
+    section#main_content {
+        margin-left:0;
+    }
+
+    header h2 {
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:0px;
+    }
+}
+
+.viewportContainer{
+    width:100%;  
+}
+
+.view{
+    width:100%;	
+    width: $deviceWidth;
+}
+
+.jbIFSA .customerListContainer .customer_item_pos {
+    width: 93%;
+    float:left;
+    height: 25px;
+    padding: 19px 2% 40px 5% !important;
+}
+
+.jbIFSA .customerListContainer .customer_item .seatNumber {
+    float: right;
+    line-height: 20px;
+}
+
+.jbIFSA .customerList {
+    float: left;
+}
+
+.customerList:last-child {
+  margin-bottom: 10px;
+}
+
+.jbIFSA .backBtn_padded{
+	/*margin-top: 14px;*/
+    padding: 9px 9px 5px 8px;
+    float: left;
+}
+
+.jbIFSA #userDetails{ 
+    padding-top:10px;
+    width: 35%;     
+}
+.jbIFSA #userDetails .user_pic {
+    margin: 11px 0 0 30px;
+    float: left;
+    height:60px;
+    width:60px;
+}
+
+.jbIFSA .user_pic img{
+  width:60px;
+  height:60px;
+}
+
+.jbIFSA .user_pic .icons {
+    margin-top: 13px;
+}
+
+.jbIFSA .user_salutation_pos {
+    float: left;
+    margin-left: 11px;
+    margin-top: 14px;
+}
+
+.jbIFSA .titleCover_size {
+	height:10px;
+	position:relative;
+	z-index:1002;
+}
+
+.jbIFSA .titleArea_size {
+	margin:0px;
+    padding:0px;	
+    height:108px;
+    width:100%;
+    position:relative;
+    z-index:1002;
+}
+
+.jbIFSA #subTitleArea{
+    width:100%;
+    height:65px;
+    position:relative;
+    z-index:998;
+}
+
+#subTitleArea .updateImage{
+  position: absolute;
+  right: 265px;
+  top: 35px;
+  height: 20px;
+}
+
+.jbIFSA .titleBar_pos {
+	margin:0;
+    padding:0;
+    position:relative;
+    /*z-index: 999;*/
+}
+
+.title_size {
+	width: 30%;
+    margin-top: 14px;
+}
+
+#title img {
+    width: 137px;
+}
+
+.jbIFSA .logo_size {
+	width:100%; 
+    margin:auto;
+    padding:auto;
+    margin-top: 100px;
+}
+
+/**alerts in title bar**/
+.alertHolder {
+    width: 35%;
+}
+
+.jbIFSA #alerts {
+    margin-right: 30px;
+    display: none;
+}
+
+.jbIFSA #alerts .icons{
+  margin-top: 14px;   
+}
+
+.jbIFSA .actionBtn_size {
+    height: 60px;
+    width: 60px;
+    margin: 24px 6px;
+}
+
+.jbIFSA .alertWeather_size span{
+	width: 50px;
+	height: 40px;
+	margin-top:8px;
+}
+
+.jbIFSA .alertContainer_hidden {
+	position:absolute;
+    width:100%;
+    height:100%;
+	margin-top:64px;
+    z-index: 2500;
+    margin-top: $deviceHeight+64px;
+}
+
+/*FLIGHT INFO */
+.jbIFSA #flightInfoContainer .flightInfoTop{
+	padding-top:50px;
+	padding-left:100px;
+}
+
+.jbIFSA .customerListContainer .icons.mosaic-icon {
+    margin-bottom: -8px;
+    margin-left: 1px;
+    margin-right: 7px;
+}
+
+.jbIFSA .alertContainer .closeButton_pos{
+	position:absolute;
+	right:5px;
+	top:15px;
+	height:60px;
+	width:60px;
+	z-index:1000;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo .heading_margin {
+	margin:0;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo {
+    width:50%;
+    height:100%;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo.currentWeatherInfo {
+    width: 100%;
+    text-align:center;
+}
+
+.jbIFSA #weatherContainer .destinationWeatherInfo_pos{
+    margin-left:-1px;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo .weatherContent{
+    margin-top:100px;
+    margin-left:100px;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo.currentWeatherInfo .weatherContent_pos{
+    max-width:250px;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo .weatherContent img{
+    float:left;
+    margin-left:5px;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo .weatherContent h1{
+    position:relative;
+    float:left;
+    margin:0 0 0 15px;
+}
+
+.jbIFSA #weatherContainer .weatherCityInfo .cityName_padded{
+    margin:0;
+    padding:0 0 0 5px;
+}
+
+.jbIFSA #weatherContainer .weatherCityDetails {
+    float:left;
+    height:60px;
+    width:100%;
+    padding:0 10px 0 5px;
+}
+
+.jbIFSA #weatherContainer .weatherCityDetails p {
+    margin:0;
+    padding:8px 0 0 5px;
+}
+
+.jbIFSA #weatherContainer.errorView .weatherError_pos{
+    margin-top:150px;
+}
+
+.weatherIcon {
+    float:left;
+    width:80px;
+    height:80px;
+}
+
+.jbIFSA #flightInfoContainer .flightInfoBottom{
+    padding-top:10px;
+}
+
+.jbIFSA #flightInfoContainer .flightInfoBottom .infoBlock{
+    
+}
+
+.jbIFSA #flightInfoContainer .flightInfoBottom .seatsInfo{
+    padding-left:90px;
+    width:450px
+}
+
+.jbIFSA #flightInfoContainer .flightInfoBottom .flightTimes{
+    padding-right:90px;
+}
+
+.jbIFSA #flightInfoContainer .flightTimesBlock{
+    display:inline-block;
+    padding-left: 10px;
+}
+
+.jbIFSA #flightInfoContainer .label{
+  width: 70px;
+  display: inline-block;
+}
+
+
+.jbIFSA #connectingFlightsContainer .dataWrapper{
+  padding-top:50px;
+  padding-left:100px;
+  height:100%;
+  overflow: scroll;
+  overflow: -webkit-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+.jbIFSA #connectingFlightsContainer .dataWrapper .connectionList{
+  padding-bottom:300px;
+}
+
+.jbIFSA #connectingFlightsContainer .connectingTo{
+  margin-top:10px;
+}
+.jbIFSA #connectingFlightsContainer .connectingInfo{
+margin-top: -5px;
+}
+.jbIFSA #connectingFlightsContainer .connectingPassenger{
+
+}
+
+.subTitle_pos{
+    float:left;
+    margin-left: 36px;
+    margin-top: 13px;
+}
+
+.jbIFSA .passengerList_classTypes{
+    float:left;
+    width: 317px;
+    height:auto !important;
+}
+
+.jbIFSA #titleText{
+    float:left;
+}
+
+#searchContainer{
+    float:left;
+}
+
+.jbIFSA .customer_search {
+    float: left;
+    margin-left: 14%;
+    height: 47px;
+    width: 84%;
+    margin-right: 2%;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.jbIFSA .customer_search .search-icon {
+    margin-top: 19px;
+    margin-left: -11%;
+}
+
+.jbIFSA .customer_search input.searchBar_pos{
+    @include roundCorners(0px);
+    float: left;
+    margin-top: 9px;
+    width: 83%;
+    height: 38px;
+    padding-top: 9px;
+    bottom: 0;
+}
+
+.jbIFSA .customer_filter_pos {
+    padding: 10px 8px 4px 9px;
+    border-radius: 3px;
+    bottom: 2px;
+    right: 0;
+    height: 24px;
+    width: 20px;
+    position: absolute;
+}
+
+/* Passenger list Seats Col */
+.jbIFSA #seatingColumn .seatingColumn_pos{
+    float:left;
+    width:706px;
+    height:768px;
+    display: none;
+}
+
+.jbIFSA .customerListContainer_pos{
+    //height:531px !important;
+    width: 30.3%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jbIFSA .customerListContainer .customer_item .ssrCodes_size{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    max-width: 260px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.jbIFSA .customerListContainer .fullName_size{
+    width: 85%;
+    max-width: 240px;
+    float: left;
+}
+
+.loginContainer_size {
+    width: 420px;
+    margin:0px auto;
+}
+
+.jbIFSA .loginContainer .inner_width {
+    width: 361px;
+}
+
+.jbIFSA .mid_title_padded {
+    padding: 0 0 16px 0;
+}
+
+.jbIFSA .loginControlContainer {
+    height: 45px;
+}
+
+.jbIFSA #saveuserid {
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+.jbIFSA #userIdField,
+.jbIFSA #passwordField {
+    width: 343px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.jbIFSA input#loginBtn.loginBtn_block{
+    width: 100%;
+}
+
+.jbIFSA .f_line {
+    margin-bottom: 19px;
+    padding: 0;
+}
+
+.jbIFSA .text_prepend_pos {
+    margin: 3px 6px;
+    width: 30px;
+    float: left;
+    padding: 6px;
+    margin-bottom:-12px;
+}
+
+.jbIFSA #flightSearchForm {
+    width: 360px;
+    margin: 0 auto;    
+}
+
+.jbIFSA #flightSearchHistory{
+    width: 360px;
+    margin: 15px auto;
+    text-align:right;
+}
+
+.jbIFSA #flightSearchForm input.textFields_pos {
+    height: 17px;
+    margin-top: 0px;
+    width: 287px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.jbIFSA #flightNumber {
+    width: 343px !important;
+}
+
+//CHECK TO SEE IF THIS ACTUALLY EXISTS
+//**********************************
+//***********************************
+.jbIFSA #timePick > div {
+    padding: 11px;
+    margin-left: 8px;
+}
+
+#timePick > div:first-child {
+    margin-left: 0px;
+}
+
+#timePick > div .icons {
+    float: right;
+    margin-top: 4px;
+}
+
+#flightMonth {
+    width: 116px;
+}
+#flightDay {
+    width: 66px;
+}
+#flightYear {
+    width: 87px;
+}
+
+.loadingContainer_pos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9999;
+}
+.loadingContainer img.loadingImg {
+    position:relative;
+    top:40%;
+    margin:0 auto;
+}
+
+.jbIFSA .flightData_pos {
+    margin-top: 7px;
+    float: right;
+    margin-right: 30px;
+}
+
+.jbIFSA .flightData .aircraftType,
+.jbIFSA .flightData .currentDate,
+.jbIFSA .flightData .timeStamp {
+    margin-left: .3em;
+}
+
+.jbIFSA .flightData .aircraftType {
+    margin-right: 5px;
+}
+
+.jbIFSA .flightData .currentDate_pos,
+.jbIFSA .flightData .timeStamp_pos {
+    margin-top: -10px;
+    float: right;
+}
+
+.jbIFSA .homeScreenContainer {
+    height: 500px;
+}
+
+.jbIFSA .homeScreenContainer .inner {
+    margin: 0px auto;
+}
+
+.homeScreenContainer .inner > div.innerDiv_pos {
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.homeScreenContainer .inner > div  > div.subDiv_height {
+    height: 150px;
+}
+
+.jbIFSA #flightDate.flightDate_size {
+    width: 333px;
+    padding: 11px;
+    height: 27px;
+}
+
+.jbIFSA #backCont {
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
+span.icons.closeArrow {
+    margin-left: 10px;
+}
+
+
+.jbIFSA #controlExtender{
+    position: absolute;
+    //top: 174px;
+    z-index: 2000;
+    width: 30px;
+}
+
+.jbIFSA .controls_size {
+    width: 254px;
+    z-index: 2000;
+}
+
+.jbIFSA ul#icons{
+    -webkit-padding-start: 0;-webkit-padding-end:0;
+    -moz-padding-start: 0;-moz-padding-end:0;
+    height: 48px;
+}
+
+.jbIFSA ul#icons li {
+    padding-top: 9px;
+    padding-bottom:14px;
+}
+
+.jbIFSA li#reload{
+    padding: 0 25px 15px 35px;
+}
+
+// QUESTIONABLE
+.jbIFSA li#reload div,
+li#sync div,
+ul li#delete div {
+    width: 26px;
+    height: 28px;
+}
+
+.jbIFSA li#sync div {
+    margin-right:34px;
+}
+
+.jbIFSA li#delete{
+    padding-right: 10px;
+}
+        
+.jbIFSA li#toggle{
+    margin-left: 20px;
+    padding-right: 0;
+    width: 40px;
+}
+.jbIFSA li#toggle div.toggle_size {
+    width: 7px;
+    height: 21px;
+}
+
+.jbIFSA ul#icons li.last div{ 
+    margin-right:0;
+    position: relative;
+    top: -2px;
+    right: -20px;
+}
+
+.jbIFSA #toggle.pushin div {
+    width: 7px;
+    height: 21px;
+}
+
+.jbIFSA .force-fluid{
+    width:300px !important;
+}
+
+.jbIFSA .seatMap .customer_item {
+    width: 88px;
+    height: 68px;
+}
+
+.view.login/*,
+.view.portal*/
+/*,.view.flight*/ {
+    //position: absolute;
+    margin-top: 65px;
+}
+
+.jbIFSA .appVersion_pos {
+    position:absolute;
+    right: 5px;
+    top:90px;
+}
+
+.jbIFSA .footer_pos {
+    bottom: 10px;
+    left: 30px;
+    position: absolute;
+    z-index: 2;
+}
+
+.jbIFSA .userNameCaption_pos {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-left: 2px;
+}
+/* Manifest View */
+.jbIFSA .manifest {
+    float: left;
+    /*width: 100%;*/
+    width: $deviceWidth;
+}
+
+.jbIFSA .customerList{
+    height: $customerListHeight;
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.jbIFSA .customerDetailsItem {
+    height: 553px;
+}
+
+.jbIFSA .detailsContainer {
+    width: $seatMapWidth;   
+    height: $seatMapHeight;
+}
+
+.jbIFSA .seatMapContainer_pos {
+    position:absolute;
+    top:700px;
+    z-index:1000;
+    width: $seatMapWidth; 
+}
+
+.jbIFSA .seatMapContainer .swiper-container,
+.jbIFSA .seatMapContainer .swiper-wrapper {
+    height: $customerListHeight;
+   /* width: 100% !important;*/
+}
+
+.jbIFSA .seatMapTab_padded {
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.jbIFSA .seatMap {
+    width: $seatMapWidth;
+    padding-bottom: 5px;
+    height: 540px;
+}
+
+
+.jbIFSA .seatItem_size {
+    width: 88px;
+}
+
+.jbIFSA .e190 .seatItem_size:nth-child(4n+2) {
+    padding: 10px 10px 10px 0 ;
+    margin-right: 45px;
+}
+
+.jbIFSA .e190 .seatItem_size:nth-child(4n+3) {
+    padding: 10px 0 10px 10px;
+    margin-left: 45px;
+}
+
+.jbIFSA .a320 .seatItem_size:nth-child(6n+3) {
+    padding: 10px 0 10px 0;
+    margin-right: 57px;
+    padding-right: 14px;
+}
+
+.jbIFSA .a320 .seatItem_size:nth-child(6n+4) {
+    padding: 10px 0 10px 10px;
+}
+
+.jbIFSA .a32s .seatItem_size:nth-child(n+1):nth-child(-n+16) .seatContainer .landscape_body_description {
+    padding: 0;
+    margin: auto;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(n+1):nth-child(-n+16) .seatContainer{
+    height: 109px ;
+    width: 133px ;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(2),
+.jbIFSA .a32s .seatItem:nth-child(8),
+.jbIFSA .a32s .seatItem:nth-child(14)   {
+    padding: 10px 10px 10px 8px ;
+    margin-right: 57px ;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(3),
+.jbIFSA .a32s .seatItem:nth-child(9),
+.jbIFSA .a32s .seatItem:nth-child(15) {
+    padding: 10px 0px 10px 10px ;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(5),
+.jbIFSA .a32s .seatItem:nth-child(11) {
+    margin-right: 57px;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(6),
+.jbIFSA .a32s .seatItem:nth-child(12) {  
+    padding-right: 110px !important;
+    padding-left: 80px !important;
+    margin-bottom: 1px !important;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(n+17):nth-child(6n+19) {
+    margin:0 57px 0 0 !important;
+    padding-right: 10px !important;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(n+17):nth-child(6n+20) {
+    margin:0 0 0 0px !important;
+}
+
+.jbIFSA .seatMap.a32s .seatItem .selected:nth-child(2),
+.jbIFSA .seatMap.a32s .seatItem .selected:nth-child(5),
+.jbIFSA .seatMap.a32s .seatItem .selected:nth-child(11) {
+    padding: 0 57px 0 0 ;
+}
+
+/* E190 */
+.jbIFSA .e190 .seatItem:nth-child(4n+1) {
+    padding: 10px 10px 10px 107px;
+}
+
+.jbIFSA .e190 .seatItem:nth-child(4n+4) {
+    padding: 10px 107px 10px 10px;
+}
+
+/* A320 */
+.jbIFSA .a320 .seatItem {
+    padding: 10px 10px 10px 9px ;
+}
+
+.jbIFSA .a320 .seatItem:nth-child(6n+1) {
+    padding: 10px 0px 10px 30px;
+}
+
+.jbIFSA .a320 .seatMap .seatItem:nth-child(6n+6) {
+    padding: 10px 22px 10px 0px;
+}
+
+/* Mint flight */
+.jbIFSA .a32s .seatItem:nth-child(n+1):nth-child(-n+16)  {
+    height: 109px;
+    width: 133px;   
+}
+
+.jbIFSA .a32s .seatItem:nth-child(1),
+.jbIFSA .a32s .seatItem:nth-child(7),
+.jbIFSA .a32s .seatItem:nth-child(13) {
+    padding: 10px 0 10px 32px;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(4),
+.jbIFSA .a32s .seatItem:nth-child(10),
+.jbIFSA .a32s .seatItem:nth-child(16) {
+    padding: 10px 37px 10px 10px ;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(5),
+.jbIFSA .a32s .seatItem:nth-child(6),
+.jbIFSA .a32s .seatItem:nth-child(11),
+.jbIFSA .a32s .seatItem:nth-child(12) {
+    padding: 10px 81px 10px 102px ;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(13),
+.jbIFSA .a32s .seatItem:nth-child(14),
+.jbIFSA .a32s .seatItem:nth-child(15),
+.jbIFSA .a32s .seatItem:nth-child(16) {
+    margin-bottom: 5px !important;
+}
+
+/* 32S non Mint */
+
+.jbIFSA .a32s .seatItem:nth-child(n+17) {
+    padding: 10px 0 10px 7px !important;    
+}
+
+.jbIFSA .a32s .seatItem:nth-child(n+17):nth-child(6n+17) {
+    padding-left: 29px !important;
+}
+
+.jbIFSA .a32s .seatItem:nth-child(n+17):nth-child(6n+22) {
+    padding-right: 37px !important;
+}
+
+.jbIFSA .seatContainer_size {
+    width: 86px;
+    height: 66px;
+    vertical-align: middle;
+}
+
+.jbIFSA .seatContainer .lastName_size {
+    width: 74px;
+    padding: 0 5px 0 5px;
+}
+
+.jbIFSA .a32s .seatContainer .firstName, 
+.jbIFSA .a32s .seatContainer .lastName {
+    padding: 0;
+    margin: auto;
+    height: 20px;
+}
+
+.jbIFSA .a32s .seatContainer .firstName_size {
+    width: 74px;
+    //height: 20px;
+}
+
+.jbIFSA .type_list {
+    float: left;
+    margin-right: 30px;
+}
+
+.jbIFSA .type_list > div.type_padded {
+    padding: 5px 10px;
+}
+
+.jbIFSA .type_selections {
+    float: left;
+    width: 66%;
+}
+
+.jbIFSA .type_selections .icons.checkbox {
+    margin-bottom: -1px;
+}
+
+.jbIFSA .type_selections ul li {
+    margin: 3px 0;
+    float: left;
+}
+
+
+.jbIFSA #srr_codes_overlay .clear_all_pos {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.jbIFSA #srr_codes_overlay .select_all_pos {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+}
+
+.jbIFSA .jb-overlay-body #ssrSubmit{
+    position: absolute;
+    left: 500px;
+    top: -55px;
+    width: 75px;
+}
+
+.jbIFSA .customerList:last-child {
+  margin-bottom:12px;
+}
+
+.jbIFSA .seatMap div.seatItem:last-child {
+  margin-bottom: 12px;
+}
+
+.jbIFSA .jb-overlay-close {
+    margin-top: -60px;
+}
+
+.jbIFSA h2.jb-overlay-title {
+    padding-left: 1px; 
+}
+

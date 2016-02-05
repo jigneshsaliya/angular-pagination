@@ -1,0 +1,33 @@
+{
+  "name": "ESWebBower",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-touch": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "datatables": "~1.10.10",
+    "jquery-2.1.4.min": "http://code.jquery.com/jquery-2.1.4.min.js",
+    "ng-table": "~0.8.3"
+  },
+  "devDependencies": {},
+  "description": "Education Stack",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Jignesh Saliya"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

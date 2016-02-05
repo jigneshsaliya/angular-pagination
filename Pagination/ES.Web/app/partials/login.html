@@ -1,0 +1,41 @@
+
+<div class="row" style="margin-top:20px;">
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
+		<button type="button" class="btn btn-success">Pagination</button>
+
+		
+		<button type="button" class="btn btn-info" ng-click="geToInterceptor()">Interceptor Example</button>
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
+		<div ng-controller="LoginCtrl as loginCtrl">
+			<table ng-table="loginCtrl.tableBasic"  class="table table-striped table-vmiddle">
+			    <tr ng-repeat="user in $data">
+			        <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+			            {{user.name}}</td>
+			        <td title="'Star'" filter="{ age: 'number'}" sortable="'star'">
+			            {{user.star}}</td>
+			        <td title="' sf-location'" filter="{ age: 'number'}" sortable="'sf-location'">
+			            {{user['sf-location']}}</td>
+
+			           
+			    </tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+
+</div>
+
+
+

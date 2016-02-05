@@ -1,0 +1,335 @@
+// JETBLUE COLORS
+$jbDarkBlue: #004990;
+$jbLightBlue: #4d90cd;
+$jbOrange: #FF9900;
+$jbDarkOrange: #FF7300;       // used for hovers
+$jbRoyalBlue: #00285E;        // generally used for gradients
+$jbGreen: #66cc66;            // used for misc mint items
+$jbGray: #999999;             // used for input placeholder text
+$jbWhite: #FFFFFF;
+$jbRed: #e45e50;              // used for cancelled flights
+$jbYellow: #e0c52f;           // used for delayed, onroute flights
+
+
+//*****************
+//  MIXINS
+//*****************
+
+// Round corners mixins: Use these to create rounded corners . Default (no value entered) is 3px.
+// Syntax: @include roundCorners_top(); OR @include roundCorners_top(4px);
+@mixin roundCorners_top($pixels: 3px) {
+    border-radius: $pixels $pixels 0px 0px; 
+    -moz-border-radius: $pixels $pixels 0px 0px; 
+    -webkit-border-radius: $pixels $pixels 0px 0px;
+}
+
+@mixin roundCorners_bottom($pixels: 3px) {
+    border-radius: 0px 0px $pixels $pixels; 
+    -moz-border-radius: 0px 0px $pixels $pixels; 
+    -webkit-border-radius: 0px 0px $pixels $pixels;
+}
+
+@mixin roundCorners_left($pixels: 3px) {
+    border-radius: $pixels 0px 0px $pixels; 
+    -moz-border-radius: $pixels 0px 0px $pixels; 
+    -webkit-border-radius: $pixels 0px 0px $pixels;
+}
+
+@mixin roundCorners_right($pixels: 3px) {
+    border-radius: 0px $pixels $pixels 0px; 
+    -moz-border-radius: 0px $pixels $pixels 3px; 
+    -webkit-border-radius: 0px $pixels $pixels 3px;
+}
+
+@mixin roundCorners($pixels:3px) {
+    border-radius: $pixels; 
+    -moz-border-radius: $pixels; 
+    -webkit-border-radius: $pixels;
+}
+
+// Gradient Mixin: Create cross-browser gradients by specifying 2 colors.
+// Syntax: @include jbGradient($jbDarkBlue, #FFFFFF);
+@mixin jbGradient($color1, $color2) {
+    background: $color1; /* Old browsers */ /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, left bottom, from($color1), to($color2));
+    background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+    background: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+    background: linear-gradient(to bottom,  $color1 0%,$color2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+}
+
+// Columns Mixin: create columns by specifying the number of columns and the column-gap between them
+// Syntax: @include columns(3,40px);
+@mixin columns($columns, $gap)
+{
+    -moz-column-count:$columns; /* Firefox */
+    -webkit-column-count:$columns; /* Safari and Chrome */
+    column-count:$columns;
+    -moz-column-gap:$gap; /* Firefox */
+    -webkit-column-gap:$gap; /* Safari and Chrome */
+    column-gap:$gap;
+}
+
+// Center Mixin: Use this to center an object both vertically and horizontally.
+// Syntax: @include center();
+@mixin center() {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// vertCenter Mixin:  use this to center an object vertically within its parent container.
+// Syntax: @include vertCenter();
+@mixin vertCenter() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+// END MIXINS
+
+.jbInput {
+    width:100%;
+    height:40px;
+    padding:1% 4%;
+    border:1px solid #cccccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom:15px;
+    border-radius: 4px;
+    color: $jbLightBlue;
+}
+
+.jbBtn{
+    -webkit-appearance: none;
+    background: $jbOrange;
+    border: 0;
+    @include roundCorners(3px);
+    text-transform:uppercase;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.jbBtnLightBlue {
+  @extend .jbBtn;
+   background-color: $jbLightBlue;
+   &:hover { 
+      background-color: $jbDarkBlue; 
+    }
+}
+
+.jbBtnOrange {
+    @extend .jbBtn;
+    background-color: $jbOrange;
+    &:hover { 
+      background-color: $jbDarkOrange; 
+    }
+}
+
+.jbBtnBlock {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.jbHeader {
+  @include jbGradient($jbDarkBlue, $jbRoyalBlue);
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.simpleHeader {
+  background-color: $jbDarkBlue;
+  text-align: center;
+}
+
+.btnGroup {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btnGroup > .jbBtn {
+    display: inline-block;
+    width: 30%;
+}
+
+.btnGroup > .jbBtn:first-child {
+    @include roundCorners_left(3px);
+    margin-right: -1px;
+    margin-left: 0px;
+}
+
+.btnGroup > .jbBtn:last-child {
+    @include roundCorners_right(3px);
+    margin-left: -1px;
+    margin-right: 0px;
+}
+.btnGroup > .jbBtn:not(:first-child):not(:last-child) {
+    @include roundCorners(0px);
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.btnSubmit {
+  width: 87px;
+  margin: 10px;
+  margin-left: 70%;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+h1 {
+    text-align:center;
+    font-weight:bold;
+    font-size:3em;
+    margin-bottom:15px;
+}
+
+h2{
+    margin-top: 13px;
+    margin-bottom:10px;
+    font-size: 33px;
+    color: $jbDarkBlue;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}   
+
+h2 span {
+    font-weight: 200; 
+}
+.description {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+input[type=text] {
+    font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jbLink{
+  display: block;
+  height: 27px;
+  color: $jbLightBlue;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+li.list_head {
+  padding: 2px 0 5px;
+  color: $jbDarkBlue;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+li.list_item {
+  padding: 0px 0px 0px 0px;
+  display: list-item;
+}
+
+#footer {
+  position: relative;
+  width: inherit;
+  margin:auto;
+}
+#services {
+  width: 120px;
+}
+
+.img_responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* top, bottom, whole*/
+.roundedCorners_top {
+  @include roundCorners_top();
+}
+
+.roundedCorners_bottom {
+  @include roundCorners_bottom();
+}
+
+.roundedCorners {
+  border-radius: 4px;
+}
+
+.dropShadow {
+  -webkit-box-shadow: 0px 1px 1px #ccc, -1px 0px 0px #f1f1f1;
+  box-shadow: 0px 1px 1px #ccc, -1px 0px 0px #f1f1f1;
+}
+
+.block {display:block;}
+
+#logo {
+    width:300px;
+}
+
+.floatLeft{
+    float:left;
+    display:block;  
+}
+
+.floatRight{
+    float:right;
+}
+
+.displayNone {
+    display:none;
+}
+
+.horizontalLine {
+    background-color: #e2e2e2;
+    width: 280px;
+    height: 2px;
+}
+
+.transparent {
+    opacity: .5;
+}
+
+.cursor{cursor: pointer;}
+
+.grayscale{opacity:0.3}
+
+.clear-fix{
+  clear:both;
+}

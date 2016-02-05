@@ -1,0 +1,57 @@
+<div class="row" style="margin-top:20px;">
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
+		<button type="button" class="btn btn-success">Pagination</button>
+
+		
+		<button type="button" class="btn btn-info">Interceptor Example</button>
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+</div>
+<div class="row" style="margin-top:20px;">
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
+		<button type="button" class="btn btn-success" ng-click="getData()">Service Call</button>
+
+		
+		
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
+		<div>
+			<table class="table">
+			    <thead>
+			      <tr>
+			        <th>ArrivalCity</th>
+			        <th>DepartureCity</th>
+			        <th>Cabin</th>
+			        <th>Amount</th>
+			        <th>JourneyType</th>
+
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr class="success" ng-repeat="fligt in flightArray">
+			        <td>{{fligt.ArrivalCity}}-{{fligt.ArrivalCityCode}}</td>
+			        <td>{{fligt.DepartureCity}}-{{fligt.DepartureCityCode}}</td>
+			        <td>{{fligt.Cabin}}</td>
+			        <td>{{fligt.Price.Amount.Amount}}</td>
+			        <td>{{fligt.JourneyType}}</td>
+			      </tr>
+			      
+			    </tbody>
+			  </table>
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-1"></div>
+
+</div>
