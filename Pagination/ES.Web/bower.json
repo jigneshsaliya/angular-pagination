@@ -10,7 +10,8 @@
     "angular-ui-router": "~0.2.15",
     "datatables": "~1.10.10",
     "jquery-2.1.4.min": "http://code.jquery.com/jquery-2.1.4.min.js",
-    "ng-table": "~0.8.3"
+    "ng-table": "~0.8.3",
+    "Framework7": "framework7#~1.4.2"
   },
   "devDependencies": {},
   "description": "Education Stack",

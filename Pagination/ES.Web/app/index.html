@@ -15,21 +15,20 @@
         <!-- <link rel="stylesheet" href="../bower_components/ng-table/dist/ng-table.min.css">  -->
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bower_components/datatables/media/css/dataTables.bootstrap.min.css" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="../bower_components/Framework7/dist/css/framework7.ios.css">
+        <link rel="stylesheet" type="text/css" href="../bower_components/Framework7/dist/css/framework7.ios.colors.css">
         
         <title>Demo</title>
     </head>
-<body ng-app="ESWeb"> 
+<body ng-app="ESWeb" ng-controller="root.controller"> 
 
-
-    <div ui-view="MainView"></div>
-
-
-<div class="jbIFSA">
-    <!-- <div ng-view class="slide-animation"></div>-->
-    <div class="">
-        <!-- <div ui-view></div> -->
+    <div class="statusbar-overlay"></div>
+   
+    <div class="view view-main">
+      <div ui-view="MainView" class="pages navbar-fixed"></div>
     </div>
+
+
 
     <!-- Base framework -->
     
@@ -37,11 +36,15 @@
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-resource/angular-resource.js"></script>
     <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
     <script src="../bower_components/angular-touch/angular-touch.js"></script>
     <script src="../bower_components/ng-table/dist/ng-table.min.js"></script>
     <script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="../bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>
+    <script src='../bower_components/Framework7/dist/js/framework7.min.js'></script>
+    
+
     <!-- End of base framework -->
 
     <!-- endbuild -->
@@ -54,12 +57,13 @@
     <script src="config/ifsaConfig.js"></script>
     <script src="controllers/LoginCtrl.js"></script>
     <script src="controllers/InterceptorCtrl.js"></script>
-    
+    <script type='text/javascript' src='services/framework7.factory.js'></script>
+    <script type='text/javascript' src='services/extends.factory.js'></script>
 
     <!-- End of app specific code -->
     <!-- endbuild -->
     
-</div>
+
 </body>
 
 </html>
